@@ -1,0 +1,19 @@
+Package: pars-creator
+Version: 1.0.0
+Section: metapackages
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: pars-creator-gimp (= 1.0.0), pars-creator-inkscape (= 1.0.0)
+Recommends: pars-creator-obs (= 1.0.0), pars-creator-kdenlive (= 1.0.0), pars-creator-audacity (= 1.0.0)
+Description: Pars Linux İçerik Üretici Meta Paketi (Tüm Creator Rolü)
+ Pars Linux için dijital içerik, grafik, video ve ses prodüksiyon
+ araçlarını (OBS Studio, GIMP, Inkscape, Kdenlive, Audacity) bir araya
+ getiren üst meta pakettir.
+ .
+ Modüler alt bileşenler:
+  - pars-creator-obs
+  - pars-creator-gimp
+  - pars-creator-inkscape
+  - pars-creator-kdenlive
+  - pars-creator-audacity

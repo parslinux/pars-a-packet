@@ -1,0 +1,11 @@
+Package: pars-gaming-lutris
+Version: 1.0.0
+Section: games
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: lutris
+Recommends: wine, winetricks
+Description: Pars Linux Oyun Modülü - Lutris
+ Açık kaynaklı oyun yönetim platformu Lutris ve WINE araçlarını
+ sağlayan modüler oyun meta paketi.

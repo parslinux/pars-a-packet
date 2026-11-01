@@ -1,0 +1,37 @@
+pkgbase = pars-dev-meta
+	pkgdesc = Pars Linux Geliştirici Meta Paketi ve Modüler Bileşenleri
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://parslinux.org
+	arch = any
+	license = GPL3
+
+pkgname = pars-dev
+	pkgdesc = Pars Linux Geliştirici Rolü Üst Meta Paketi
+	depends = pars-dev-git
+	optdepends = pars-dev-codium: VSCodium kod editörü modülü
+	optdepends = pars-dev-docker: Docker ve Konteyner araçları modülü
+	optdepends = pars-dev-dbeaver: DBeaver evrensel veritabanı aracı modülü
+
+pkgname = pars-dev-git
+	pkgdesc = Pars Linux Geliştirici Modülü - Git & VCS
+	depends = git
+	depends = git-lfs
+	optdepends = github-cli: GitHub komut satırı aracı
+	optdepends = tig: Konsol tabanlı git arayüzü
+
+pkgname = pars-dev-codium
+	pkgdesc = Pars Linux Geliştirici Modülü - VSCodium
+	depends = vscodium-bin
+	depends = flatpak
+
+pkgname = pars-dev-docker
+	pkgdesc = Pars Linux Geliştirici Modülü - Docker & Konteyner
+	depends = docker
+	depends = docker-compose
+	optdepends = containerd: Bağımsız konteyner çalışma zamanı
+	optdepends = lazydocker: Terminal tabanlı docker yönetim arayüzü
+
+pkgname = pars-dev-dbeaver
+	pkgdesc = Pars Linux Geliştirici Modülü - DBeaver Universal DB Client
+	depends = dbeaver

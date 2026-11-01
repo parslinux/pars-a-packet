@@ -1,0 +1,42 @@
+pkgbase = pars-gaming-meta
+	pkgdesc = Pars Linux Oyun Meta Paketi ve Modüler Bileşenleri
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://parslinux.org
+	arch = any
+	license = GPL3
+
+pkgname = pars-gaming
+	pkgdesc = Pars Linux Oyun Rolü Üst Meta Paketi
+	depends = pars-gaming-gamemode
+	depends = pars-gaming-mangohud
+	optdepends = pars-gaming-steam: Steam istemcisi modülü
+	optdepends = pars-gaming-lutris: Lutris oyun yöneticisi modülü
+	optdepends = pars-gaming-heroic: Heroic Games Launcher modülü
+
+pkgname = pars-gaming-steam
+	pkgdesc = Pars Linux Oyun Modülü - Steam
+	depends = steam
+	optdepends = steam-native-runtime: Yerel sistem kütüphaneleri çalışma zamanı
+
+pkgname = pars-gaming-lutris
+	pkgdesc = Pars Linux Oyun Modülü - Lutris
+	depends = lutris
+	optdepends = wine: Windows uyumluluk katmanı
+	optdepends = winetricks: Wine yapılandırma yardımcı betikleri
+
+pkgname = pars-gaming-heroic
+	pkgdesc = Pars Linux Oyun Modülü - Heroic Games Launcher
+	depends = heroic-games-launcher-bin
+	depends = flatpak
+
+pkgname = pars-gaming-gamemode
+	pkgdesc = Pars Linux Oyun Modülü - Feral GameMode Optimizasyon Servisi
+	depends = gamemode
+	depends = lib32-gamemode
+
+pkgname = pars-gaming-mangohud
+	pkgdesc = Pars Linux Oyun Modülü - MangoHud Donanım ve FPS Katmanı
+	depends = mangohud
+	depends = lib32-mangohud
+	optdepends = goverlay: MangoHud grafiksel ayar arayüzü

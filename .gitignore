@@ -1,0 +1,20 @@
+# Paketleme çıktıları
+dist/
+**/dist/
+build/
+**/build/
+*.deb
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.tar.gz
+*.tar.xz
+
+# Günlük ve geçici dosyalar
+*.log
+*~
+.directory
+.DS_Store
+.idea/
+.vscode/
+**/pkg/
+**/src/

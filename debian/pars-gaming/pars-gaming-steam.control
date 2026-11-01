@@ -1,0 +1,11 @@
+Package: pars-gaming-steam
+Version: 1.0.0
+Section: games
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: steam-installer | steam
+Recommends: steam-devices
+Description: Pars Linux Oyun Modülü - Steam
+ Valve Steam istemcisi ve kontrolcü donanım kurallarını içeren
+ granüler oyun modülü meta paketi.

@@ -1,0 +1,63 @@
+# Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+pkgbase='pars-dev-meta'
+pkgname=(
+    'pars-dev'
+    'pars-dev-git'
+    'pars-dev-codium'
+    'pars-dev-docker'
+    'pars-dev-dbeaver'
+)
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Pars Linux Geliştirici Meta Paketi ve Modüler Bileşenleri"
+arch=('any')
+url="https://parslinux.org"
+license=('GPL3')
+
+package_pars-dev() {
+    pkgdesc="Pars Linux Geliştirici Rolü Üst Meta Paketi"
+    depends=('pars-dev-git')
+    optdepends=(
+        'pars-dev-codium: VSCodium kod editörü modülü'
+        'pars-dev-docker: Docker ve Konteyner araçları modülü'
+        'pars-dev-dbeaver: DBeaver evrensel veritabanı aracı modülü'
+    )
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Dev Rolü Kurulu" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-dev-git() {
+    pkgdesc="Pars Linux Geliştirici Modülü - Git & VCS"
+    depends=('git' 'git-lfs')
+    optdepends=(
+        'github-cli: GitHub komut satırı aracı'
+        'tig: Konsol tabanlı git arayüzü'
+    )
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Git Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-dev-codium() {
+    pkgdesc="Pars Linux Geliştirici Modülü - VSCodium"
+    depends=('vscodium-bin' 'flatpak')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux VSCodium Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-dev-docker() {
+    pkgdesc="Pars Linux Geliştirici Modülü - Docker & Konteyner"
+    depends=('docker' 'docker-compose')
+    optdepends=(
+        'containerd: Bağımsız konteyner çalışma zamanı'
+        'lazydocker: Terminal tabanlı docker yönetim arayüzü'
+    )
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Docker Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-dev-dbeaver() {
+    pkgdesc="Pars Linux Geliştirici Modülü - DBeaver Universal DB Client"
+    depends=('dbeaver')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux DBeaver Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}

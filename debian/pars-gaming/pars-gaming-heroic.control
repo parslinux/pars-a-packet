@@ -1,0 +1,10 @@
+Package: pars-gaming-heroic
+Version: 1.0.0
+Section: games
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: heroic | flatpak
+Description: Pars Linux Oyun Modülü - Heroic Games Launcher
+ Epic Games, GOG ve Amazon Prime oyunlarını yönetmek için
+ açık kaynaklı Heroic Games Launcher entegrasyonu.

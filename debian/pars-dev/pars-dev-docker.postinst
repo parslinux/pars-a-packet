@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+    if getent group docker >/dev/null 2>&1; then
+        echo "[pars-dev-docker] 'docker' grubu mevcut."
+    else
+        echo "[pars-dev-docker] 'docker' grubu oluşturuluyor..."
+        groupadd -r docker || true
+    fi
+    echo "[pars-dev-docker] İpucu: sudo olmadan docker kullanabilmek için: 'sudo usermod -aG docker \$USER'"
+fi
+
+exit 0

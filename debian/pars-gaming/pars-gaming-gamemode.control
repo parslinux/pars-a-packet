@@ -1,0 +1,11 @@
+Package: pars-gaming-gamemode
+Version: 1.0.0
+Section: admin
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: gamemode
+Recommends: libgamemodeauto0
+Description: Pars Linux Oyun Modülü - GameMode
+ Feral GameMode arka plan servisi ile işlemci frekansı, GPU performansı
+ ve I/O önceliklerini oyun esnasında dinamik olarak optimize eder.

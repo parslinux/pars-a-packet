@@ -1,0 +1,11 @@
+Package: pars-creator-gimp
+Version: 1.0.0
+Section: graphics
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: gimp
+Recommends: gimp-plugin-registry, gimp-data-extras
+Description: Pars Linux İçerik Üretici Modülü - GIMP
+ GNU İmaj Düzenleme Programı (GIMP) ve popüler eklentilerini içeren
+ raster grafik ve fotoğraf işleme modülü.

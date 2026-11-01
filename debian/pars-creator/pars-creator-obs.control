@@ -1,0 +1,11 @@
+Package: pars-creator-obs
+Version: 1.0.0
+Section: video
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: obs-studio
+Recommends: v4l2loopback-dkms
+Description: Pars Linux İçerik Üretici Modülü - OBS Studio
+ Canlı yayın ve ekran kaydı yazılımı Open Broadcaster Software (OBS).
+ Sanal kamera desteği için v4l2loopback önerilir.

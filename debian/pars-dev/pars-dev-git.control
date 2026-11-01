@@ -1,0 +1,11 @@
+Package: pars-dev-git
+Version: 1.0.0
+Section: vcs
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: git, git-lfs
+Recommends: tig, gh
+Description: Pars Linux Geliştirici Modülü - Git & VCS
+ Git versiyon kontrol sistemi, Git Large File Storage (LFS)
+ ve yardımcı geliştirici araçlarını içerir.

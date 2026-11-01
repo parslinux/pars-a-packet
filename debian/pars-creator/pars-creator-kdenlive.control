@@ -1,0 +1,11 @@
+Package: pars-creator-kdenlive
+Version: 1.0.0
+Section: video
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: kdenlive
+Recommends: frei0r-plugins, swh-plugins, mediainfo
+Description: Pars Linux İçerik Üretici Modülü - Kdenlive
+ MLT framework tabanlı, çok kanallı profesyonel doğrusal olmayan
+ (non-linear) video kurgu ve montaj yazılımı.

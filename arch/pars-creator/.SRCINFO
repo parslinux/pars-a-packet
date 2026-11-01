@@ -1,0 +1,38 @@
+pkgbase = pars-creator-meta
+	pkgdesc = Pars Linux İçerik Üretici Meta Paketi ve Modüler Bileşenleri
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://parslinux.org
+	arch = any
+	license = GPL3
+
+pkgname = pars-creator
+	pkgdesc = Pars Linux İçerik Üretici Rolü Üst Meta Paketi
+	depends = pars-creator-gimp
+	depends = pars-creator-inkscape
+	optdepends = pars-creator-obs: OBS Studio ekran kayıt ve yayın modülü
+	optdepends = pars-creator-kdenlive: Kdenlive video montaj modülü
+	optdepends = pars-creator-audacity: Audacity ses prodüksiyon modülü
+
+pkgname = pars-creator-obs
+	pkgdesc = Pars Linux İçerik Üretici Modülü - OBS Studio
+	depends = obs-studio
+	optdepends = v4l2loopback-dkms: Sanal kamera aygıt sürücüsü
+
+pkgname = pars-creator-gimp
+	pkgdesc = Pars Linux İçerik Üretici Modülü - GIMP
+	depends = gimp
+
+pkgname = pars-creator-inkscape
+	pkgdesc = Pars Linux İçerik Üretici Modülü - Inkscape
+	depends = inkscape
+
+pkgname = pars-creator-kdenlive
+	pkgdesc = Pars Linux İçerik Üretici Modülü - Kdenlive
+	depends = kdenlive
+	optdepends = frei0r-plugins: Ek video efekt filtreleri
+
+pkgname = pars-creator-audacity
+	pkgdesc = Pars Linux İçerik Üretici Modülü - Audacity
+	depends = audacity
+	optdepends = ffmpeg: Ekstra ses format kod çözücüleri

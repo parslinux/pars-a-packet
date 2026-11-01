@@ -1,0 +1,66 @@
+# Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+pkgbase='pars-creator-meta'
+pkgname=(
+    'pars-creator'
+    'pars-creator-obs'
+    'pars-creator-gimp'
+    'pars-creator-inkscape'
+    'pars-creator-kdenlive'
+    'pars-creator-audacity'
+)
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Pars Linux İçerik Üretici Meta Paketi ve Modüler Bileşenleri"
+arch=('any')
+url="https://parslinux.org"
+license=('GPL3')
+
+package_pars-creator() {
+    pkgdesc="Pars Linux İçerik Üretici Rolü Üst Meta Paketi"
+    depends=('pars-creator-gimp' 'pars-creator-inkscape')
+    optdepends=(
+        'pars-creator-obs: OBS Studio ekran kayıt ve yayın modülü'
+        'pars-creator-kdenlive: Kdenlive video montaj modülü'
+        'pars-creator-audacity: Audacity ses prodüksiyon modülü'
+    )
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Creator Rolü Kurulu" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-creator-obs() {
+    pkgdesc="Pars Linux İçerik Üretici Modülü - OBS Studio"
+    depends=('obs-studio')
+    optdepends=('v4l2loopback-dkms: Sanal kamera aygıt sürücüsü')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux OBS Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-creator-gimp() {
+    pkgdesc="Pars Linux İçerik Üretici Modülü - GIMP"
+    depends=('gimp')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux GIMP Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-creator-inkscape() {
+    pkgdesc="Pars Linux İçerik Üretici Modülü - Inkscape"
+    depends=('inkscape')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Inkscape Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-creator-kdenlive() {
+    pkgdesc="Pars Linux İçerik Üretici Modülü - Kdenlive"
+    depends=('kdenlive')
+    optdepends=('frei0r-plugins: Ek video efekt filtreleri')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Kdenlive Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-creator-audacity() {
+    pkgdesc="Pars Linux İçerik Üretici Modülü - Audacity"
+    depends=('audacity')
+    optdepends=('ffmpeg: Ekstra ses format kod çözücüleri')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Audacity Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}

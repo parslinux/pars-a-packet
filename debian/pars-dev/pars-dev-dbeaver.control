@@ -1,0 +1,10 @@
+Package: pars-dev-dbeaver
+Version: 1.0.0
+Section: database
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: dbeaver-ce | flatpak
+Description: Pars Linux Geliştirici Modülü - DBeaver Universal DB Client
+ PostgreSQL, MySQL, SQLite, Oracle ve birçok veritabanı yönetimini
+ destekleyen evrensel açık kaynak SQL istemcisi.

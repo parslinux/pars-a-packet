@@ -1,0 +1,18 @@
+Package: pars-gaming
+Version: 1.0.0
+Section: metapackages
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: pars-gaming-gamemode (= 1.0.0), pars-gaming-mangohud (= 1.0.0)
+Recommends: pars-gaming-steam (= 1.0.0), pars-gaming-lutris (= 1.0.0), pars-gaming-heroic (= 1.0.0)
+Description: Pars Linux Oyun Meta Paketi (Tüm Oyun Rolü)
+ Pars Linux için oyun ekosistemini (Steam, Lutris, Heroic, GameMode, MangoHud)
+ tek seferde veya modüler olarak sağlayan üst meta pakettir.
+ .
+ Modüler alt bileşenler:
+  - pars-gaming-steam
+  - pars-gaming-lutris
+  - pars-gaming-heroic
+  - pars-gaming-gamemode
+  - pars-gaming-mangohud

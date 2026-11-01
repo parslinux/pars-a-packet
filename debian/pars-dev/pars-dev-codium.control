@@ -1,0 +1,10 @@
+Package: pars-dev-codium
+Version: 1.0.0
+Section: devel
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: codium | vscodium | code | flatpak
+Description: Pars Linux Geliştirici Modülü - VS Codium
+ Telemetriden arındırılmış, açık kaynak kodlu Visual Studio Code
+ ikili dağıtımı (VSCodium) entegrasyonu.

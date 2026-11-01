@@ -1,0 +1,34 @@
+# ==============================================================================
+# Pars Linux - Ek Paket Rolleri .claudeignore
+# ==============================================================================
+
+# Git & VCS
+.git/
+.gitignore
+
+# Derleme Çıktıları ve Dağıtım Paketleri
+**/dist/
+**/.tmp_build/
+*.deb
+*.pkg.tar.zst
+*.pkg.tar.xz
+*.pkg.tar.gz
+
+# Arch Linux Makepkg Geçici Dizinleri
+**/src/
+**/pkg/
+*.log
+*.log.*
+
+# Editör & IDE Geçici Dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Geçici Test ve Yedekleme Dosyaları
+tmp/
+scratch/
+*.bak

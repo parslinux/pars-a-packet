@@ -1,0 +1,17 @@
+Package: pars-dev
+Version: 1.0.0
+Section: metapackages
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: pars-dev-git (= 1.0.0)
+Recommends: pars-dev-codium (= 1.0.0), pars-dev-docker (= 1.0.0), pars-dev-dbeaver (= 1.0.0)
+Description: Pars Linux Geliştirici Meta Paketi (Tüm Dev Rolü)
+ Pars Linux için modern yazılım geliştirme ortamını (Git, VS Codium,
+ Docker, DBeaver) sağlayan üst meta pakettir.
+ .
+ Modüler alt bileşenler:
+  - pars-dev-git
+  - pars-dev-codium
+  - pars-dev-docker
+  - pars-dev-dbeaver

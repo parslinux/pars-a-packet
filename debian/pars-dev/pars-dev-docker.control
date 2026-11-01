@@ -1,0 +1,11 @@
+Package: pars-dev-docker
+Version: 1.0.0
+Section: admin
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: docker.io | docker-ce, docker-compose-plugin | docker-compose
+Recommends: containerd
+Description: Pars Linux Geliştirici Modülü - Docker & Konteyner
+ Docker Engine ve Docker Compose geliştirici ortamı.
+ Kurulum sonrası kullanıcı izinleri ve servis konfigürasyonunu yönetir.

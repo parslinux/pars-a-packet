@@ -1,0 +1,73 @@
+# Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+pkgbase='pars-gaming-meta'
+pkgname=(
+    'pars-gaming'
+    'pars-gaming-steam'
+    'pars-gaming-lutris'
+    'pars-gaming-heroic'
+    'pars-gaming-gamemode'
+    'pars-gaming-mangohud'
+)
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Pars Linux Oyun Meta Paketi ve Modüler Bileşenleri"
+arch=('any')
+url="https://parslinux.org"
+license=('GPL3')
+
+package_pars-gaming() {
+    pkgdesc="Pars Linux Oyun Rolü Üst Meta Paketi"
+    depends=(
+        'pars-gaming-gamemode'
+        'pars-gaming-mangohud'
+    )
+    optdepends=(
+        'pars-gaming-steam: Steam istemcisi modülü'
+        'pars-gaming-lutris: Lutris oyun yöneticisi modülü'
+        'pars-gaming-heroic: Heroic Games Launcher modülü'
+    )
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Gaming Rolü Kurulu" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-gaming-steam() {
+    pkgdesc="Pars Linux Oyun Modülü - Steam"
+    depends=('steam')
+    optdepends=('steam-native-runtime: Yerel sistem kütüphaneleri çalışma zamanı')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Steam Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-gaming-lutris() {
+    pkgdesc="Pars Linux Oyun Modülü - Lutris"
+    depends=('lutris')
+    optdepends=(
+        'wine: Windows uyumluluk katmanı'
+        'winetricks: Wine yapılandırma yardımcı betikleri'
+    )
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Lutris Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-gaming-heroic() {
+    pkgdesc="Pars Linux Oyun Modülü - Heroic Games Launcher"
+    # Arch/AUR veya Flatpak üzerinden Heroic desteği
+    depends=('heroic-games-launcher-bin' 'flatpak')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux Heroic Launcher Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-gaming-gamemode() {
+    pkgdesc="Pars Linux Oyun Modülü - Feral GameMode Optimizasyon Servisi"
+    depends=('gamemode' 'lib32-gamemode')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux GameMode Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}
+
+package_pars-gaming-mangohud() {
+    pkgdesc="Pars Linux Oyun Modülü - MangoHud Donanım ve FPS Katmanı"
+    depends=('mangohud' 'lib32-mangohud')
+    optdepends=('goverlay: MangoHud grafiksel ayar arayüzü')
+    mkdir -p "${pkgdir}/usr/share/doc/${pkgname}"
+    echo "Pars Linux MangoHud Modülü" > "${pkgdir}/usr/share/doc/${pkgname}/README"
+}

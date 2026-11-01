@@ -1,0 +1,11 @@
+Package: pars-gaming-mangohud
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: mangohud
+Recommends: goverlay
+Description: Pars Linux Oyun Modülü - MangoHud
+ Vulkan ve OpenGL oyunlarında FPS, sıcaklık, CPU/GPU kullanımı
+ ve kare zamanlamalarını ekranda gösteren performans katmanı.

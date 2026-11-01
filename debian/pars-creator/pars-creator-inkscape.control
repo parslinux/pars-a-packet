@@ -1,0 +1,10 @@
+Package: pars-creator-inkscape
+Version: 1.0.0
+Section: graphics
+Priority: optional
+Architecture: all
+Maintainer: Pars Linux Ekibi <dev@parslinux.org>
+Depends: inkscape
+Description: Pars Linux İçerik Üretici Modülü - Inkscape
+ Profesyonel vektörel çizim, SVG formatı ve grafik tasarım
+ aracı Inkscape modülü.
